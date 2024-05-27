@@ -8,67 +8,141 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <title>Bootstrap - Alinhamento de textos</title>
+    <title>Bootstrap - Elementos flutuantes</title>
 
   </head>
 
   <body style="margin-bottom: 200px;padding: 16px;">
 
-    <!-- Paragráfo Justificado -->
-    <p class="text-justify">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Velit id inventore error et alias praesentium corporis 
-      dolorum illo, accusamus eaque atque? Odio culpa sit ipsam 
-      pariatur itaque accusamus soluta magnam. Lorem ipsum dolor 
-      sit amet consectetur adipisicing elit. Neque, eos sint. 
-      Veniam sapiente assumenda dignissimos dolore impedit 
-      inventore eos quis aperiam provident quisquam? Deleniti 
-      sapiente, possimus accusamus alias cumque odit.
-    </p>
-
-    <br>
-    <br>
-
-    <!-- 
-      Alinhamento responsivo - 
-      class text-<tela>-<alinhamento>
-        tela> sm, md, lg, xl
-        alinhamento: left, center, right
-    -->
-
-    <p class="text-sm-right">tela &gt;= 576px</p><!-- Small - sm-->
-    <p class="text-md-right">tela &gt;= 768px</p><!-- Medium - md-->
-    <p class="text-lg-right">tela &gt;= 992px</p><!-- Large - lg -->
-    <p class="text-xl-right">tela &gt;= 1200px</p><!-- Extra Large - xl -->
-
-    <br>
-    <br>
-
-    <!-- Elemento Block para inline -->
-    <h1 class="bg-success d-inline">Lorem ipsum dolor</h1>
-    <p class="bg-success d-inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Quam, nisi perferendis
-    </p>
-
-    <br>
-    <br>
-
-    <!-- elemento Inline para Block -->
-    <span class="bg-success d-block">Lorem ipsum dolor 1</span>
-    <br>
-    <span class="bg-success d-block">Lorem ipsum dolor 2</span>
-
-    <br>
-    <br>
-
-    <!-- Elemento Inline-Block-->
-    <div class="bg-warning">
-
-      <h3 class="bg-success d-inline">Lorem ipsum</h3>
-      <h3 class="bg-success d-inline-block" style="margin-top: 50px;
-        width: 400px;">Lorem ipsum dolor</h3>
-
+    <!-- Elementos flutuantes -->
+    <div style="border: 1px solid red;" class="clearfix">
+      <div class="bg-success float-left">Float left</div>
+      <div class="bg-warning float-right">Float Right</div>
     </div>
+
+    <!-- Posicionamento Fixo - Top e Bottom -->
+    <h1 class="bg-success fixed-bottom">Título de conteúdo fixo</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Veritatis saepe architecto aliquam amet ratione repellat 
+      soluta, ipsum totam, ea eveniet sunt. Possimus modi quod, 
+      sunt adipisci fugit dolorum fugiat distinctio. Possimus 
+      modi quod, sunt adipisci fugit dolorum fugiat distinctio.
+    </p>
+
+    <!--
+      Float responsivo - float-<tela>-<direcao>
+        tela: sm, md, lg, xl
+        alinhamento: left,right
+    -->
+    <div class="float-sm-right">tela &gt;= 576px * </div><!-- Small - sm -->
+    <div class="float-md-right">tela &gt;= 768px * </div><!-- Medium - md -->
+    <div class="float-lg-right">tela &gt;= 992px * </div><!-- Large - lg -->
+    <div class="float-xl-right">tela &gt;= 1200px * </div><!-- Extra Large - xl -->
+
+    <br>
+    <br>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Veritatis saepe architecto aliquam amet ratione repellat 
+      soluta, ipsum totam, ea eveniet sunt. Possimus modi quod, 
+      sunt adipisci fugit dolorum fugiat distinctio. Possimus 
+      modi quod, sunt adipisci fugit dolorum fugiat distinctio.
+    </p>
+
+    <!-- Colar no topo (sticky)-->
+    <ul class="list-inline bg-warning sticky-top">
+      <li class="list-inline-item">Item 1</li>
+      <li class="list-inline-item">Item 2</li>
+      <li class="list-inline-item">Item 3</li>
+    </ul>
+
+    <h1>Título do Conteúdo</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Veritatis saepe architecto aliquam amet ratione repellat 
+      soluta, ipsum totam, ea eveniet sunt. Possimus modi quod, 
+      sunt adipisci fugit dolorum fugiat distinctio. Possimus 
+      modi quod, sunt adipisci fugit dolorum fugiat distinctio.
+    </p>
+
+    <h1>Título do Conteúdo</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Veritatis saepe architecto aliquam amet ratione repellat 
+      soluta, ipsum totam, ea eveniet sunt. Possimus modi quod, 
+      sunt adipisci fugit dolorum fugiat distinctio. Possimus 
+      modi quod, sunt adipisci fugit dolorum fugiat distinctio.
+    </p>
+
+    <h1>Título do Conteúdo</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Veritatis saepe architecto aliquam amet ratione repellat 
+      soluta, ipsum totam, ea eveniet sunt. Possimus modi quod, 
+      sunt adipisci fugit dolorum fugiat distinctio. Possimus 
+      modi quod, sunt adipisci fugit dolorum fugiat distinctio.
+    </p>
+
+    <h1>Título do Conteúdo</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Veritatis saepe architecto aliquam amet ratione repellat 
+      soluta, ipsum totam, ea eveniet sunt. Possimus modi quod, 
+      sunt adipisci fugit dolorum fugiat distinctio. Possimus 
+      modi quod, sunt adipisci fugit dolorum fugiat distinctio.
+    </p>
+
+    <h1>Título do Conteúdo</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Veritatis saepe architecto aliquam amet ratione repellat 
+      soluta, ipsum totam, ea eveniet sunt. Possimus modi quod, 
+      sunt adipisci fugit dolorum fugiat distinctio. Possimus 
+      modi quod, sunt adipisci fugit dolorum fugiat distinctio.
+    </p>
+
+    <h1>Título do Conteúdo</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Veritatis saepe architecto aliquam amet ratione repellat 
+      soluta, ipsum totam, ea eveniet sunt. Possimus modi quod, 
+      sunt adipisci fugit dolorum fugiat distinctio. Possimus 
+      modi quod, sunt adipisci fugit dolorum fugiat distinctio.
+    </p>
+
+    <h1>Título do Conteúdo</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Veritatis saepe architecto aliquam amet ratione repellat 
+      soluta, ipsum totam, ea eveniet sunt. Possimus modi quod, 
+      sunt adipisci fugit dolorum fugiat distinctio. Possimus 
+      modi quod, sunt adipisci fugit dolorum fugiat distinctio.
+    </p>
+
+    <h1>Título do Conteúdo</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Veritatis saepe architecto aliquam amet ratione repellat 
+      soluta, ipsum totam, ea eveniet sunt. Possimus modi quod, 
+      sunt adipisci fugit dolorum fugiat distinctio. Possimus 
+      modi quod, sunt adipisci fugit dolorum fugiat distinctio.
+    </p>
+
+    <h1>Título do Conteúdo</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Veritatis saepe architecto aliquam amet ratione repellat 
+      soluta, ipsum totam, ea eveniet sunt. Possimus modi quod, 
+      sunt adipisci fugit dolorum fugiat distinctio. Possimus 
+      modi quod, sunt adipisci fugit dolorum fugiat distinctio.
+    </p>
+
+
+
+
+
 
 
 
